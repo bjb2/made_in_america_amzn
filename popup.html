@@ -1,0 +1,149 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Made in America Highlighter</title>
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+
+    body {
+      width: 280px;
+      font-family: Arial, sans-serif;
+      font-size: 13px;
+      color: #111;
+      background: #fff;
+    }
+
+    header {
+      background: #002868;
+      color: #fff;
+      padding: 12px 14px;
+      display: flex;
+      align-items: center;
+      gap: 8px;
+    }
+
+    header .flag { font-size: 22px; }
+
+    header h1 {
+      font-size: 14px;
+      font-weight: 700;
+      line-height: 1.3;
+    }
+
+    header p {
+      font-size: 11px;
+      opacity: 0.8;
+      margin-top: 2px;
+    }
+
+    .stats {
+      padding: 12px 14px;
+      border-bottom: 1px solid #e8e8e8;
+      display: flex;
+      gap: 12px;
+    }
+
+    .stat {
+      flex: 1;
+      text-align: center;
+    }
+
+    .stat-value {
+      font-size: 22px;
+      font-weight: 700;
+      color: #002868;
+      display: block;
+    }
+
+    .stat-label {
+      font-size: 10px;
+      color: #777;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .section {
+      padding: 10px 14px;
+      border-bottom: 1px solid #e8e8e8;
+    }
+
+    .section-title {
+      font-size: 10px;
+      font-weight: 700;
+      text-transform: uppercase;
+      letter-spacing: 0.5px;
+      color: #777;
+      margin-bottom: 6px;
+    }
+
+    #match-info {
+      color: #333;
+      line-height: 1.5;
+    }
+
+    #match-info .match-name {
+      font-weight: 700;
+      color: #002868;
+    }
+
+    #match-info .match-category {
+      color: #555;
+      font-size: 12px;
+    }
+
+    #match-info .match-source {
+      font-size: 11px;
+      color: #999;
+    }
+
+    #match-info a {
+      color: #002868;
+      font-size: 12px;
+    }
+
+    .no-match {
+      color: #999;
+      font-style: italic;
+    }
+
+    footer {
+      padding: 8px 14px;
+      font-size: 10px;
+      color: #bbb;
+      text-align: center;
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <span class="flag">🇺🇸</span>
+    <div>
+      <h1>Made in America Highlighter</h1>
+      <p>Identifying American-made brands on Amazon</p>
+    </div>
+  </header>
+
+  <div class="stats">
+    <div class="stat">
+      <span class="stat-value" id="stat-companies">—</span>
+      <span class="stat-label">Companies</span>
+    </div>
+    <div class="stat">
+      <span class="stat-value" id="stat-keys">—</span>
+      <span class="stat-label">Match Keys</span>
+    </div>
+  </div>
+
+  <div class="section">
+    <div class="section-title">Current Page</div>
+    <div id="match-info"><span class="no-match">Not on an Amazon product page</span></div>
+  </div>
+
+  <footer>Data from OneBison · Southland Heritage · Americans Working</footer>
+
+  <script src="data/companies.js"></script>
+  <script src="popup.js"></script>
+</body>
+</html>

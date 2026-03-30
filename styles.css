@@ -1,0 +1,85 @@
+/* ── Made in America Highlighter styles ──────────────────────────────────── */
+
+/* Badge appended inline next to brand/title text */
+.mia-badge {
+  display: inline-block;
+  margin-left: 8px;
+  padding: 2px 8px;
+  background: #002868;          /* USA blue */
+  color: #fff;
+  font-size: 11px;
+  font-weight: 600;
+  font-family: Arial, sans-serif;
+  border-radius: 3px;
+  vertical-align: middle;
+  white-space: nowrap;
+  letter-spacing: 0.3px;
+  text-decoration: none;
+  transition: background 0.15s;
+}
+
+.mia-badge:hover {
+  background: #BF0A30;          /* USA red on hover */
+}
+
+/* Subtle highlight on the element itself */
+.mia-highlight {
+  position: relative;
+}
+
+/* Product title banner — sits below the title block on a detail page */
+.mia-banner {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin: 8px 0 12px 0;
+  padding: 10px 14px;
+  background: #f0f4ff;
+  border-left: 4px solid #002868;
+  border-radius: 0 4px 4px 0;
+  font-family: Arial, sans-serif;
+  font-size: 13px;
+  color: #111;
+  line-height: 1.4;
+}
+
+.mia-banner-flag {
+  font-size: 22px;
+  flex-shrink: 0;
+}
+
+.mia-banner-text {
+  flex: 1;
+}
+
+.mia-banner-text strong {
+  color: #002868;
+}
+
+.mia-banner-text em {
+  font-style: normal;
+  color: #555;
+}
+
+.mia-banner-link {
+  flex-shrink: 0;
+  font-size: 12px;
+  color: #002868;
+  text-decoration: none;
+  border: 1px solid #002868;
+  padding: 3px 8px;
+  border-radius: 3px;
+  white-space: nowrap;
+  transition: background 0.15s, color 0.15s;
+}
+
+.mia-banner-link:hover {
+  background: #002868;
+  color: #fff;
+}
+
+/* Search result card — subtle left border highlight */
+.mia-card-highlight {
+  border-left: 3px solid #002868 !important;
+  box-shadow: -2px 0 0 0 #BF0A30;
+}
