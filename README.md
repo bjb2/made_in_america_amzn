@@ -2,6 +2,10 @@
 
 A Chrome extension that identifies and highlights Made in America brands while you shop on Amazon.
 
+<img width="678" height="703" alt="image" src="https://github.com/user-attachments/assets/03561b29-95b7-4fd5-8126-1771b563e5e8" />
+
+<img width="1341" height="413" alt="image" src="https://github.com/user-attachments/assets/d2f392a4-8edb-47cd-823e-439f1a930036" />
+
 ## What it does
 
 - **Product pages** — injects a banner below the title when the brand or manufacturer matches a known American-made company
